@@ -9,11 +9,11 @@ This is a timetable designed for a student who is studying at Onslow.
 git clone https://github.com/TEESDAAL/timetable
 cd timetable
 npm install
-
 ```
 ### - Running through the browser
 1. run the web server by running `npm run dev` though the terminal
-```npm run dev
+```
+npm run dev
 ```
 ### - Running through the desktop app
 1. cd into the src-tauri folder `cd src-tauri` then run `cargo build` **This will take a long time to compile!**
@@ -26,5 +26,4 @@ cd src-tauri
 cargo build
 cd ..
 npm run tauri dev
-
 ```
