@@ -2,11 +2,10 @@
 This is a timetable designed for a student who is studying at Onslow.
 
 ## Running the program
-This app can be used in two ways.
-### 1. Through the browser
-This timetable can be run through the browser using the following command in the command line
-`npm run dev`
-### 2. Through the desktop app
+### - Running through the browser
+1. run `npm install` in the terminal from the root directory of the project
+2. run the web server by running `npm run dev` though the terminal
+### - Running through the desktop app
 1. run `npm install` in the terminal from the root directory of the project
 2. cd into the src-tauri folder `cd src-tauri` then run `cargo build` **This will take a long time to compile!**
 This timetable can be run through the desktop app using the following command in the command line
