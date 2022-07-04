@@ -5,7 +5,8 @@ This is a timetable designed for a student who is studying at Onslow.
 ### Setup
  - Git clone this repository using the following url:`https://github.com/TEESDAAL/timetable`
  - Then install the node packages using npm install
-```git clone https://github.com/TEESDAAL/timetable
+```
+git clone https://github.com/TEESDAAL/timetable
 cd timetable
 npm install
 ```
@@ -18,7 +19,8 @@ This timetable can be run through the desktop app using the following command in
 `npm run tauri dev`
 **Note this will take a long time to compile the first time, and will also run the `npm run dev` command at the same time**
 2. After a while the app should run on it's own opening the desktop app. - If this doesn't happen navigate to the `target -> debug -> app.exe` and run the app.exe file.
-```cd src-tauri
+```
+cd src-tauri
 cargo build
 npm run tauri dev
 ```
