@@ -12,7 +12,10 @@ npm install
 ```
 ### - Running through the browser
 1. run the web server by running `npm run dev` though the terminal
-```npm run dev```
+
+```
+npm run dev
+```
 ### - Running through the desktop app
 1. cd into the src-tauri folder `cd src-tauri` then run `cargo build` **This will take a long time to compile!**
 This timetable can be run through the desktop app using the following command in the command line
