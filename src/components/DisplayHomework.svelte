@@ -4,8 +4,10 @@
     /**
      * Removes the homework from a selected subject by index
      * @param index (int) The index of the homework to be removed
+     * @param subject (object) The subject to remove the homework from
      */
-    function remove_homework(index) {
+    function remove_homework(subject, index) {
+        console.log(subject);
         selected_subject.home_work.splice(index, 1);
         // The following lines are necessary to tell svelte that the data has changed
         selected_subject.home_work = selected_subject.home_work;
