@@ -34,7 +34,7 @@
         </p>
         <p>Room: {selected_subject.room_number}</p>
         <AddHomework bind:subjects bind:selected_subject />
-        <DisplayHomework bind:selected_subject />
+        <DisplayHomework bind:selected_subject bind:subjects />
         <Attendance
             bind:presence={data[selected_day][selected_spell].attendance}
             bind:data

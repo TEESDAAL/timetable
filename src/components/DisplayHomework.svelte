@@ -1,14 +1,15 @@
 <script>
     export let selected_subject;
+    export let subjects;
     /**
      * Removes the homework from a selected subject by index
      * @param index (int) The index of the homework to be removed
      */
     function remove_homework(index) {
         selected_subject.home_work.splice(index, 1);
-        // The following lines is necessary to tell svelte that the data has changed
+        // The following lines are necessary to tell svelte that the data has changed
         selected_subject.home_work = selected_subject.home_work;
-        // data = data;
+        subjects = subjects;
     }
 </script>
 
