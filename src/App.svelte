@@ -5,10 +5,9 @@
 	let data = template_data;
 	let spell_five_cancelled = false;
 	let subjects = data["Subjects"];
-	let selected_day = "Monday";
-	let selected_spell = "Spell 1";
-	let selected_subject =
-		data["Subjects"][data[selected_day][selected_spell].subject_name];
+	let selected_day = null;
+	let selected_spell = null;
+	let selected_subject = null;
 	console.log(selected_subject);
 </script>
 
@@ -25,8 +24,8 @@
 		bind:selected_subject
 		bind:subjects
 		bind:data
-		{selected_day}
-		{selected_spell}
+		bind:selected_day
+		bind:selected_spell
 		bind:spell_five_cancelled
 	/>
 </main>

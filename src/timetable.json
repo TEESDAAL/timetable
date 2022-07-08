@@ -161,8 +161,8 @@
         "Spell 5": {
             "attendance": "?",
             "subject_name": "13DTC",
-            "start_time": "1:25",
-            "end_time": "2:20"
+            "start_time": "2:15",
+            "end_time": "3:10"
         }
     },
     "Subjects": {
@@ -171,7 +171,7 @@
             "subject_name": "13BIO",
             "teacher_name": "Jan Szydlowski",
             "teacher_code": "SJA",
-            "room_number": "12",
+            "room_number": "27",
             "home_work": []
         },
         "13ENG": {
@@ -195,7 +195,7 @@
             "subject_name": "13MAC",
             "teacher_name": "Shimmy Unnikrishnan",
             "teacher_code": "USH",
-            "room_number": "29",
+            "room_number": "40",
             "home_work": []
         },
         "13DTM": {
