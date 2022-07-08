@@ -25,14 +25,18 @@
     </label>
     <!-- Only render subject based information if the subject is defined -->
     {#if selected_subject !== null}
+        <!-- eg 13BIO - Monday Spell 1 -->
         <h1>
             {selected_subject.subject_name} - {selected_day}
             {selected_spell}
         </h1>
+        <!-- eg Jan Szydlowski - (SJA) -->
         <p>
             {selected_subject.teacher_name} - ({selected_subject.teacher_code})
         </p>
         <p>Room: {selected_subject.room_number}</p>
+        <!-- Some of the following bindings are to make
+            sure that things will update correctly-->
         <AddHomework bind:subjects bind:selected_subject />
         <DisplayHomework bind:selected_subject bind:subjects />
         <Attendance

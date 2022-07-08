@@ -11,7 +11,8 @@
         subject_info.home_work = subject_info.home_work;
         // Remove text from the input field
         homework_name = "";
-        // The following lines is necessary to tell svelte that the data has changed
+        // The following lines is necessary to tell svelte
+        // that the data has changed
         subjects = subjects;
         selected_subject = selected_subject;
     }

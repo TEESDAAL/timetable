@@ -17,6 +17,7 @@
 </script>
 
 <table>
+    <!-- Evenly sets the width of all the columns in the table-->
     <colgroup>
         <col
             style="width: calc(80vw / {Object.keys(data).slice(0, -1).length +
@@ -25,13 +26,21 @@
         />
     </colgroup>
     <tr>
+        <!-- Empty th is so the top right of the table is blank -->
         <th id="empty" />
+        <!-- Loop through all the days of the school week
+        slice is to remove the subjects from the list-->
         {#each Object.keys(data).slice(0, -1) as day}
             <th>{day}</th>
         {/each}
     </tr>
+    <!-- Loop through all the spells and query each day for the spell -->
     {#each possible_spells as spell}
         <tr>
+            <!-- Doesn't display the last row in the table
+            if spell five is cancelled. -->
+            <!-- Since tables are formatted by rows this code gets each spell
+            then for that spell query each day for the subject-->
             {#if spell_five_cancelled && spell === "Spell 5"}
                 <th
                     colspan={Object.keys(data).slice(0, -1).length + 1}
@@ -43,6 +52,7 @@
             {:else}
                 <th>{spell}</th>
             {/if}
+            <!-- Loop through each day of the school week -->
             {#each Object.keys(data).slice(0, -1) as day}
                 {#if data[day][spell] === undefined}
                     <td class="free-spell" />

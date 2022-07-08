@@ -9,12 +9,16 @@
         ["M", "Medical"],
         ["F", "Cancelled"],
     ];
+    // This code is run whenever a local variable is updated
     $: {
+        // This line is used to cause the svelte to update
         data = data;
     }
 </script>
 
 <div>
+    <!-- Displays the attendance options and sets the
+        presence variable equal to the selected value-->
     {#each attendance_options as option}
         <div style="text-align: left">
             <label>

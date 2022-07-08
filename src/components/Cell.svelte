@@ -19,7 +19,8 @@
         selected_day = day;
         selected_spell = spell;
     }}
-    ><!-- on:click sets the selected subject day and spell to the info in this cell -->
+    ><!-- on:click sets the selected subject day and
+        the spell to the info in this cell -->
     <div class="spell">
         <!-- Name of the subject -->
         <p>{subject.subject_name}</p>

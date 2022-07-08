@@ -13,12 +13,14 @@
     }
 </script>
 
+<!-- Change what is message is displayed depending on the amount of homework -->
 {#if selected_subject.home_work.length > 0}
     <h2>Homework:</h2>
 {:else}
     <h3>No Homework for {selected_subject.subject_name} :)</h3>
 {/if}
 <ul>
+    <!-- Loops through all the homework for selected_subject and displays it-->
     {#each selected_subject.home_work as work, i}
         <li>
             {work}<span
