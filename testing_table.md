@@ -3,7 +3,7 @@
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |E| Selecting a subject|Clicking on the relevant cell|Changing the subject name, spell, teacher name/code, homework and attendance to the clicked subject|![Checking to see if subject info updates when clicking on cells](testing_table_images/clickingCells.gif)|None, works as expected|
 |B| Selecting corner cells|First and last spells of each day|Checking to see if the subjects update properly| ![Testing boundary spells](testing_table_images/TestingBoundarySpells.gif)|None, works as expected|
-|E| Cancelling spell five| Checking and unchecking the checkbox| See that spell 5 cancels correctly| ![Cancelling spell five](testing_table_images/cancellingSpell5.gif)|None, works as expected|
+|E| Cancelling spell five| Checking and unchecking the checkbox| See that spell 5 cancels correctly| ![Cancelling spell five](testing_table_images/cancellingSpellFive.gif)|None, works as expected|
 |B/I| Cancelling spell five while selected| Checking and unchecking the checkbox| See that spell 5 cancels correctly while subject selected is in spell 5| ![Cancelling spell five while selected](testing_table_images/cancellingSpell5WhileSelected.gif)|Works, but doesn't deselect spell 5|
 |B/I| Cancelling spell five while selected| Checking and unchecking the checkbox| See that spell 5 cancels correctly while subject selected is in spell 5| ![Cancelling spell five while selected](testing_table_images/cancellingSpell5WhileSelectedWorks.gif)|Works, now deselects spell 5|
 |B| Not having a spell 1 on monday| Running the program removing spell 1 monday from json| Render with no spell information| ![Nothing displays](testing_table_images/undefined_first_spell.png)| Doesn't work nothing displays|
